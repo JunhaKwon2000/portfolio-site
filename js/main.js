@@ -56,12 +56,19 @@ document.onkeydown = (event) => {
 }
 
 // SCROLL
-const spyEl = document.querySelector('.about-me-body.scroll-spy');
-const controllerAboutMe = new ScrollMagic.Controller();
+const spyEl1 = document.querySelector('.about-me-body div:nth-of-type(1)');
+const controllerAboutMe1 = new ScrollMagic.Controller();
 new ScrollMagic.Scene({
-  triggerElement: spyEl, 
+  triggerElement: spyEl1, 
   triggerHook: 0.8,
-}).setClassToggle(spyEl, 'show').addTo(controllerAboutMe);
+}).setClassToggle(spyEl1, 'show').addTo(controllerAboutMe1);
+
+const spyEl2 = document.querySelector('.about-me-body div:nth-of-type(2)');
+const controllerAboutMe2 = new ScrollMagic.Controller();
+new ScrollMagic.Scene({
+  triggerElement: spyEl2, 
+  triggerHook: 0.8,
+}).setClassToggle(spyEl2, 'show').addTo(controllerAboutMe2);
 
 const projectSpy1 = document.querySelector('.body-spy1');
 const controllerProject1 = new ScrollMagic.Controller();
@@ -119,7 +126,6 @@ const copyMail = document.querySelector('.clipboard-email').textContent;
     }
   }
 
-
 // TEXT DESIGN 
 const textWrapper = document.querySelector('.ml3');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
@@ -149,4 +155,4 @@ const responsiveMenuAnchors = document.querySelectorAll('header nav ul li a');
 responsiveMenuAnchors.forEach(anchors => {
 anchors.addEventListener('click', () => {
   responsiveMenuExpander.classList.toggle('active');
-})})   
+})})
