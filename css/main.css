@@ -255,7 +255,7 @@ header .btn-menu .material-symbols-outlined {
   border-radius: 50%;
   position: absolute;
   top: 8px;
-  left: 9px;
+  left: 9.7px;
   animation: mouseWheel 1s infinite;
 }
 
@@ -454,7 +454,7 @@ header .btn-menu .material-symbols-outlined {
 }
 
 .project-body .project-wrapper > div:nth-child(2) a:hover {
-  transform: scale(1.2);
+  transform: translateY(-5px);
 }
 
 .project-body.body-spy1 {
@@ -848,6 +848,11 @@ footer .footer-copyrights a {
 
   footer .footer-bio p {
     font-size: 11px;
+  }
+
+  footer .footer-bio .footer-socials {
+    display: flex;
+    justify-content: flex-end;
   }
 
   footer .footer-bio img {
