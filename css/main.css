@@ -551,8 +551,20 @@ footer .inner {
 }
 
 footer .footer-bio {
+  display: flex;
+  justify-content: space-between;
   margin: 20px 0;
 }
+
+footer .footer-bio img {
+  display: inline-block;
+  width: 50px;
+}
+
+footer .footer-bio div:nth-of-type(2) h2 {
+  text-align: center;
+}
+
 
 footer .footer-bio h2 {
   font-size: 20px;
@@ -824,10 +836,17 @@ footer .footer-copyrights a {
   }
 
   /* FOOTER */
-  footer .footer-bio p {
-    font-size: 12px;
+  footer .footer-bio {
+    column-gap: 20px;
   }
 
+  footer .footer-bio p {
+    font-size: 11px;
+  }
+
+  footer .footer-bio img {
+    width: 30px;
+  }
   /* MODAL */
   .modal .modal-content {
     width: 80%;
