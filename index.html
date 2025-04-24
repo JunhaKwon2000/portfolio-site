@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junha Kwon</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- My CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <!-- My Javascript -->
+  <script defer src="./js/main.js"></script>
+</head>
+<body>
+  <!-- CHEAT DIV FOR RESPONSIVE -->
+  <div style="overflow-x: hidden;">
+        <!-- HEADER -->
+    <header id="header">
+      <div class="inner">
+        <a href="index.html" class="logo">
+          <span class="my-name font-robot">
+            <
+            <div class="font-robot name">Junha Kwon</div>
+            <div class="expander">onClick={reload}</div>
+            />
+          </span>
+        </a>
+        <nav class="font-en">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about-me">ABOUT ME</a></li>
+            <li><a href="#project">PROJECT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav> 
+
+        <a href="javascript:void(0)" class="btn-menu">
+          <span class="material-symbols-outlined">menu</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- SIDEBAR -->
+    <section>
+      <div class="side-bar">
+        <ul>
+          <li><a href="https://github.com/JunhaKwon2000"><img src="./images/sb-git.svg" alt="사이드바"></a></li>
+          <li><a href="https://youtube.com"><img src="./images/sb-yt.png" alt="사이드바"></a></li>
+          <li><a href="https://kr.linkedin.com/"><img src="./images/sb-link.png" alt="사이드바"></a></li>
+          <li><a href="https://www.instagram.com/"><img src="./images/sb-insta.png" alt="사이드바"></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- VISUAL -->
+    <section id="visual">
+      <div class="visual">
+        <div class="inner">
+          <div>
+            <h1 class="cursor ml3"><span>안</span><span>녕</span><span>하</span><span>세</span><span>요</span><span>!</span></h1>
+            <p>개발자 지망생 권준하입니다</p>        
+          </div>
+          <div class="inner">
+            <a href="#project">프로젝트 보러가기</a>
+          </div>
+        </div>
+        <div class="visual-mouse"></div>
+      </div>
+      <!-- <div class="visual-mouse"></div> -->
+    </section>
+
+    <!-- ABOUT ME -->
+    <section>
+      <div class="inner">
+        <div class="content-header" id="about-me">
+          <h1 class="font-en">ABOUT ME</h1>
+          <hr>
+          <p>여기서는 저에 대해서 자세히 알아가실 수 있으며, 제가 가진 기술 스택들을 확인하실 수 있습니다!</p>
+        </div>
+        <div class="about-me-body scroll-spy">
+          <div>
+            <h2>저에 대해서 알아가세요!</h2>
+            <p>
+              안녕하세요! 현재 개발자가 되기 위해 공부하고 있는 권준하입니다!<br>
+              학교를 졸업한 이후 웹 개발에 관심이 생겨 국비지원 교육을 받고 있습니다.<br>
+              가산디지털단지에 있는 <span class="purple-text">구디 아카데미</span>에서 공부하고 있으며,<br>
+              지금은 <span class="purple-text">프론트엔드</span> 부분에 대해서 배우고 있습니다.
+            </p>
+            <p>
+              현재 훈련생으로서 공부하는 내용을 기록하고 공유하는 목적으로<br>
+              블로그에 올리고 있습니다! 제가 블로그에 올리는 내용이 궁금하시면<br>
+              제 개인 <span class="purple-text">블로그</span>에 방문해 보세요! 지금은 내용이 별로 없지만<br>
+              앞으로 공부하면서 여러 포스팅을 올릴거니 꼭 방문해주세요!
+            </p>
+          </div>
+          <div>
+            <h2>기술 스택</h2>
+            <div class="skill-stack-1">
+              <div>
+                <img src="./images/HTML.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">HTML5</p>
+                </div>
+              </div>
+              <div>
+                <img src="./images/CSS.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">CSS</p>
+                </div>
+              </div>
+              <div>
+                <img src="./images/JavaScript.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">Javascript</p>
+                </div>
+              </div>
+              <div>
+                <img src="./images/Java-Light.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">Java</p>
+                </div>
+              </div>
+              <div>
+                <img src="./images/Spring-Light.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">Spring</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill-stack-2">
+              <div>
+                <img src="./images/JQuery.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">jquery</p>
+                </div>
+              </div>
+              <div>
+                <img src="./images/MySQL-Light.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">MySQL</p>
+                </div>
+              </div>
+              <div>
+                <img src="./images/AWS-Light.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">AWS</p>
+                </div>
+              </div>
+              <div>
+                <img src="./images/Eclipse-Light.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">Eclipse</p>
+                </div>
+              </div>
+              <div>
+                <img src="./images/Docker.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">Docker</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill-stack-3">
+              <div>
+                <img src="./images/ExpressJS-Light.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">Express</p>
+                </div>
+              </div>
+              <div>
+                <img src="./images/Figma.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">Figma</p>
+                </div>
+              </div>
+              <div>
+                <img src="./images/Github-Light.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">Github</p>
+                </div>
+              </div>
+              <div>
+                <img src="./images/NodeJS.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">NodeJS</p>
+                </div>
+              </div>
+              <div>
+                <img src="./images/React.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">React</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill-stack-4">
+              <div>
+                <img src="./images/TailwindCSS-Light.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">Tailwind</p>
+                </div>
+              </div>
+              <div>
+                <img src="./images/TypeScript.svg" alt="스택">
+                <div class="overlay">
+                  <p class="font-en">TypeScript</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section class="project-class">
+      <div class="inner">
+        <div class="content-header" id="project">
+          <h1 class="font-en">PROJECT</h1>
+          <hr>
+          <p>여기서는 제가 진행한 프로젝트들을 만나보실 수 있습니다!</p>
+        </div>
+
+        <div class="project-body body-spy1">
+          <div>
+            <img src="./images/work_3.jpg" alt="프로젝트">
+          </div>
+          <div class="project-wrapper">
+            <div class="project-text">
+              <h1 class="purple-text">프로젝트 #1</h1>
+              <p>
+                이 프로젝트는 정말 멋있는 프로젝트입니다!<br>
+                이 프로젝트는 정말 역작입니다!<br>
+                이 프로젝트는 성공했습니다<br>
+                이 프로젝트는 왜이렇게 멋있을까요..?<br>
+                이 프로젝트는 정말 가슴이 웅장해집니다.
+              </p>
+            </div>
+            <div class="btn">
+              <a href="https://github.com/JunhaKwon2000/frontend-study" class="btn-git font-en">Github</a>
+              <a href="javascript:void(0)" class='btn-README README-1 font-en'>README</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-body body-spy2">
+          <div>
+            <img src="./images/work_4.jpg" alt="프로젝트">
+          </div>
+          <div class="project-wrapper">
+            <div class="project-text">
+              <h1 class="purple-text">프로젝트 #2</h1>
+              <p>
+                이 프로젝트는 정말 멋있는 프로젝트입니다!<br>
+                이 프로젝트는 정말 역작입니다!<br>
+                이 프로젝트는 성공했습니다<br>
+                이 프로젝트는 왜이렇게 멋있을까요..?<br>
+                이 프로젝트는 정말 가슴이 웅장해집니다.
+              </p>
+            </div>
+            <div class="btn">
+              <a href="https://github.com/JunhaKwon2000/frontend-study" class="btn-git font-en">Github</a>
+              <a href="javascript:void(0)" class='btn-README README-2 font-en'>README</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="inner">
+        <div class="content-header" id="project">
+          <h1 class="font-en">CONTACT</h1>
+          <hr>
+          <p>문의사항이 있으면 아래 연락처로 연락 주세요!</p>
+        </div>
+
+        <div class="contact-body">
+          <div class="contact-body-img contact-spy1"></div>
+          <div class="contact-body-text">
+            <h2 class="font-en purple-text contact-spy2">Email</h2>
+            <a href="javascript:void(0)" class=" clipboard-link font-en contact-spy2">
+              <span class="material-symbols-outlined">content_copy</span>
+              <span class="clipboard-email" onclick="copyContent1()">junhaorket@hanmail.net</span>
+            </a>
+            <h2 class="font-en purple-text contact-spy2">Phone</h2>
+            <a href="javascript:void(0)" class="clipboard-link font-en contact-spy2">
+              <span class="material-symbols-outlined">content_copy</span>
+              <span class="clipboard-phone" onclick="copyContent2()">010-4586-4381</span>
+            </a>
+            <h2 class="font-en purple-text contact-spy2">Github</h2>
+            <a href="https://github.com/JunhaKwon2000" class="font-en contact-spy2">
+              <span class="material-symbols-outlined">open_in_new</span>
+              github.com/JunhaKwon2000
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="inner">
+        <div class="footer-bio">
+          <h2 class="font-en">JUNHA KWON</h2>
+          <p>
+            ~2025.02 한양대학교(ERICA) 응용수학과 졸업<br>
+            ~2025.10 클라우드(AWS) 활용 자바/스프링 부트캠프 수료
+          </p>
+        </div>
+        <div class="footer-copyrights">
+          <p>
+            &copy; Coyright <span></span>. Made by <a href="#">Junha Kwon</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- README MODAL -->
+  <div class="modal modal-1">
+    <div class="modal-content">
+      <div class="modal-header font-en">
+        README
+        <span class="material-symbols-outlined btn-close">close</span>
+      </div>
+      <div class="modal-body">
+        <p>프로젝트 1에 대한 내용입니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal-2">
+    <div class="modal-content">
+      <div class="modal-header font-en">
+        README
+        <span class="material-symbols-outlined btn-close">close</span>
+      </div>
+      <div class="modal-body">
+        <p>프로젝트 2에 대한 내용입니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLIPBOARD MODAL -->
+  <div class="clipboard">
+    <div class="clipboard-body">
+      <h3>클립보드에 복사되었습니다!</h3>
+      <a href="javascript:void(0)">확인</a>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<!-- PAGE REFERENCE -->
+<!-- https://www.rammaheshwari.com/#about -->
+
+<!-- EXTERNAL SOURCE -->
+<!-- MOVING LETTERS: https://tobiasahlin.com/moving-letters/ -->
+<!-- COPY TO CLIPBOARD: https://www.freecodecamp.org/news/copy-text-to-clipboard-javascript/  -->
