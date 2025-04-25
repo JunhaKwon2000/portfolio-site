@@ -10,7 +10,7 @@ projectDivButton.addEventListener('mouseout', () => {
   projectDiv.classList.remove('animate__heartBeat');
 })
 
-// PROJECT 1
+// MODAL - PROJECT 1
 const readmeBtn1 = document.querySelector('.btn-README.README-1');
 const readmePopUp1 = document.querySelector('.modal.modal-1');
 const readmeClose1 = document.querySelector('.modal.modal-1 .btn-close');
@@ -23,7 +23,7 @@ readmeClose1.addEventListener('click', () => {
   readmePopUp1.classList.remove('reveal');
 })
 
-// PROJECT 2
+// MODAL - PROJECT 2
 const readmeBtn2 = document.querySelector('.btn-README.README-2');
 const readmePopUp2 = document.querySelector('.modal.modal-2');
 const readmeClose2 = document.querySelector('.modal.modal-2 .btn-close');
@@ -36,11 +36,10 @@ readmeClose2.addEventListener('click', () => {
   readmePopUp1.classList.remove('reveal');
 })
 
-// COMMON CLIPBOARD
+// MODAL - COMMON CLIPBOARD
 const clipBoardBtn = document.querySelectorAll('.clipboard-link');
 const clipBoardPopUp = document.querySelector('.clipboard');
 const clipBoardClose = document.querySelector('.clipboard .clipboard-body a');
-
 clipBoardBtn.forEach((btn) => {
   btn.addEventListener('click', () => {
     clipBoardPopUp.style.display = 'flex';
@@ -52,7 +51,7 @@ clipBoardClose.addEventListener('click', () => {
   clipBoardPopUp.classList.remove('reveal');
 })
 
-// COMMON WINDOW ESCAPE KEY
+// MODAL - COMMON WINDOW ESCAPE KEY
 document.onkeydown = (event) => {
   if (event.key === 'Escape') {
     readmePopUp1.style.display = 'none';
@@ -64,19 +63,20 @@ document.onkeydown = (event) => {
   }
 }
 
-// COMMON CLICK OUTSIDE TO CLOSE
-window.onclick = function(event) {
+// MODAL - COMMON CLICK OUTSIDE TO CLOSE
+// event.target: 내가 클릭한 요소의 자식을 의미, 즉 내가 클릭한 요소가 팝업일 경우 = 팝업 외에 바탕을 클릭했을 경우
+window.onclick = (event) => {
   if (event.target === readmePopUp1) {
       readmePopUp1.style.display = "none";
       readmePopUp1.classList.remove('reveal');
-    }
+  }
   if (event.target === readmePopUp2) {
       readmePopUp2.style.display = "none";
       readmePopUp2.classList.remove('reveal');
   }
   if (event.target === clipBoardPopUp) {
-    clipBoardPopUp.style.display = "none";
-    clipBoardPopUp.classList.remove('reveal');
+      clipBoardPopUp.style.display = "none";
+      clipBoardPopUp.classList.remove('reveal');
   } 
 }
 
@@ -151,7 +151,7 @@ const copyMail = document.querySelector('.clipboard-email').textContent;
     }
   }
 
-// TEXT DESIGN 
+// VISUAL - TEXT DESIGN 
 const textWrapper = document.querySelector('.ml3');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 anime.timeline({loop: true})

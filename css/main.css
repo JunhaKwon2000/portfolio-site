@@ -47,7 +47,7 @@ body {
   transition: 0.2s;
 }
 
-/* 헤더 공통 스타일 */
+/* COMMON HEADER STYLE */
 .content-header {
   text-align: center;
   font-size: 40px;
@@ -68,7 +68,7 @@ body {
   text-align: center;
 }
 
-/* 버튼 공통 스타일 */
+/* COMMON BUTTON STYLE */
 .btn-git {
   display: block;
   text-align: right;
@@ -118,6 +118,7 @@ header .inner a .my-name {
 
 header .inner a .my-name .name {
   padding-right: 5px;
+  display: block;
 }
 
 header .inner a .my-name .expander {
@@ -132,7 +133,7 @@ header .inner a .my-name:hover .header-disappear {
 
 header .inner a .my-name:hover .expander {
   color: #7843E9;
-  display: block;
+  display: inline-block;
 }
 
 header .inner a .my-name:hover .purple-text-header {
@@ -898,7 +899,7 @@ footer .footer-copyrights a {
 }
 
 /* ------------------ANIMATIONS------------------ */
-@keyframes gradient {
+/* @keyframes gradient {
   0% {
       background-position: 0% 50%;
   }
@@ -908,7 +909,7 @@ footer .footer-copyrights a {
   100% {
       background-position: 0% 50%;
   }
-}
+} */
 
 @keyframes mouseWheel {
   0% {
@@ -957,7 +958,7 @@ footer .footer-copyrights a {
   }
 }
 
-@keyframes projectWiggle {
+/* @keyframes projectWiggle {
   0% {
     transform: translateY(-3px);
   }
@@ -977,7 +978,7 @@ footer .footer-copyrights a {
   100% {
     transform: translateY(-3px);
   }
-}
+} */
 
 @keyframes moveModalREADME {
   0% {
