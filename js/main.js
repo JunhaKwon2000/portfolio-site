@@ -55,6 +55,19 @@ document.onkeydown = (event) => {
   }
 }
 
+// COMMON CLICK OUTSIDE TO CLOSE
+window.onclick = function(event) {
+  if (event.target === readmePopUp1) {
+        readmePopUp1.style.display = "none";
+    }
+  if (event.target === readmePopUp2) {
+      readmePopUp2.style.display = "none";
+  }
+  if (event.target === clipBoardPopUp) {
+    clipBoardPopUp.style.display = "none";
+  } 
+}
+
 // SCROLL
 const spyEl1 = document.querySelector('.about-me-body div:nth-of-type(1)');
 const controllerAboutMe1 = new ScrollMagic.Controller();
