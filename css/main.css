@@ -632,6 +632,11 @@ footer .footer-copyrights a {
   flex-direction: column;
 }
 
+.modal.reveal .modal-content {
+  animation: moveModalREADME 0.5s;
+}
+
+
 .modal .modal-header {
   background-color: #7843E9;
   color: white;
@@ -680,6 +685,10 @@ footer .footer-copyrights a {
   row-gap: 15px;
 }
 
+.clipboard.reveal .clipboard-body {
+  animation: moveModalCLIPBOARD 0.5s;
+}
+
 .clipboard .clipboard-body a {
   border-radius: 5px;
   text-align: center;
@@ -708,7 +717,7 @@ footer .footer-copyrights a {
     font-size: 14px;
   }
 
-  /* -----HEADER----- */
+  /* HEADER */
   header .btn-menu {
     display: block;
   }
@@ -967,5 +976,29 @@ footer .footer-copyrights a {
 
   100% {
     transform: translateY(-3px);
+  }
+}
+
+@keyframes moveModalREADME {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes moveModalCLIPBOARD {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

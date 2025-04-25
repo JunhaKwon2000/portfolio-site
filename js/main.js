@@ -16,9 +16,11 @@ const readmePopUp1 = document.querySelector('.modal.modal-1');
 const readmeClose1 = document.querySelector('.modal.modal-1 .btn-close');
 readmeBtn1.addEventListener('click', () => {
   readmePopUp1.style.display = 'flex';
+  readmePopUp1.classList.add('reveal');
 })
 readmeClose1.addEventListener('click', () => {
   readmePopUp1.style.display = 'none';
+  readmePopUp1.classList.remove('reveal');
 })
 
 // PROJECT 2
@@ -27,9 +29,11 @@ const readmePopUp2 = document.querySelector('.modal.modal-2');
 const readmeClose2 = document.querySelector('.modal.modal-2 .btn-close');
 readmeBtn2.addEventListener('click', () => {
   readmePopUp2.style.display = 'flex';
+  readmePopUp2.classList.add('reveal');
 })
 readmeClose2.addEventListener('click', () => {
   readmePopUp2.style.display = 'none';
+  readmePopUp1.classList.remove('reveal');
 })
 
 // COMMON CLIPBOARD
@@ -40,31 +44,39 @@ const clipBoardClose = document.querySelector('.clipboard .clipboard-body a');
 clipBoardBtn.forEach((btn) => {
   btn.addEventListener('click', () => {
     clipBoardPopUp.style.display = 'flex';
+    clipBoardPopUp.classList.add('reveal');
     })
 })
 clipBoardClose.addEventListener('click', () => {
   clipBoardPopUp.style.display = 'none';
+  clipBoardPopUp.classList.remove('reveal');
 })
 
 // COMMON WINDOW ESCAPE KEY
 document.onkeydown = (event) => {
   if (event.key === 'Escape') {
     readmePopUp1.style.display = 'none';
+    readmePopUp1.classList.remove('reveal');
     readmePopUp2.style.display = 'none';
+    readmePopUp2.classList.remove('reveal');
     clipBoardPopUp.style.display = 'none';
+    clipBoardPopUp.classList.remove('reveal');
   }
 }
 
 // COMMON CLICK OUTSIDE TO CLOSE
 window.onclick = function(event) {
   if (event.target === readmePopUp1) {
-        readmePopUp1.style.display = "none";
+      readmePopUp1.style.display = "none";
+      readmePopUp1.classList.remove('reveal');
     }
   if (event.target === readmePopUp2) {
       readmePopUp2.style.display = "none";
+      readmePopUp2.classList.remove('reveal');
   }
   if (event.target === clipBoardPopUp) {
     clipBoardPopUp.style.display = "none";
+    clipBoardPopUp.classList.remove('reveal');
   } 
 }
 
